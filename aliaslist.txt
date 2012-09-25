@@ -1,0 +1,16 @@
+alias]
+        ci = commit
+        st = status
+        pl = pull
+        co = checkout
+        df = diff
+        dc = diff --cached
+        br = branch
+        addi = add -i
+        tree = log --graph --oneline --all --decorate
+
+[color]
+        ui = auto
+
+[merge]
+        tool = vimdiff
