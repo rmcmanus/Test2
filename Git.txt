@@ -1,0 +1,26 @@
+1) Git uses the SHA-1 hash to keep track of changes to a git repo. It uses these hashes to allow access to previous commits and different branches and pulls/pushes if commiting to a server or off-site repo.
+2) A modified state is a file that has been edited, but has not been saved or committed, and has been edited on a local machine. A staged file is one that has been added to an intermediate list of files to be commited to a repo. These files cannot be changed until they are committed. A committed set of files are ones that have been assigned a hash and have been saved in the current repository. Only repos that have been committed may be pushed to an external repo.
+3) A working directory is the current repo that you are modifying, usually on a personal machine. Files that are tracked were committed last, and exist in (at least) the last snapshot. Untracked files are new files that have not been committed, so they are not associated with a hash.
+4) A remote repository is a working server that can be used to store and exchange files when working in a team or on a project. These remote repos must be pushed independently after committing to a local machine.
+
+1) git init
+2) git add README.txt
+3) git add src/\*.java
+4) git status
+5) git mv README README.txt
+6) git add code.java
+7) git status
+8) git rm --cached junk.java
+9) git log
+10) git log -2
+11) git log --after="2012-09-01"
+12) git log --committer="Ryan McManus"
+13) git reset blah.java
+14) git remote add demo git://github.com/CyndiRader/JavaDemos.git
+15) git remote -v
+16) git clone git://github.com/crader@mines.edu/DemoJava.git
+
+1) A file would read as both staged and unstaged if you're in the midst of editing an already tracked file.
+2) git add stages files for committing, and using git remote add connects to a remote server.
+3) .gitignore tells git to ignore files that are not currently being tracked, or you do not want git to track.
+4) This is used to restore a deleted file from index into a tree. This should be used carefully because it'll overwrite any file of the same name, regardless of status.
