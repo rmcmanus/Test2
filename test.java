@@ -4,9 +4,7 @@ public void test() {
 
 <<<<<<< HEAD
 	String taylor = "Taylor";
-=======
 	public void TestClass() {
 
 	}
->>>>>>> 8490ac8f51697f838aa328ce6f9f8525c6f28a75
 }
